@@ -9,7 +9,7 @@ const forecast = (longitude, latitude, fn) => {
         } else if(body.error){
             fn('unable to find')
         } else {
-            fn(undefined, `${body.current.weather_descriptions[0]}. Its ${body.current.temperature} outside, but it feels like fkn ${body.current.feelslike}. Vítr fouká jak crazy rychlostí ${body.current.wind_speed} km/h`)
+            fn(undefined, `${body.current.weather_descriptions[0]}. Its ${body.current.temperature} outside, but it feels like fkn ${body.current.feelslike}. Vítr fouká jak crazy rychlostí ${body.current.wind_speed} km/h. shut up`)
         } 
     })
 }
